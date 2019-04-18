@@ -37,6 +37,12 @@
                     <!-- 每个遍历需要拼接的串 -->
                     id=#{user_id}
                 </foreach>
+                <!-- 实现“AND id IN(1,10,16)”拼接 -->
+                <!-- <foreach collection="ids" item="user_id" open="AND id IN(" close=")" separator=",">
+                     //每个遍历需要拼接的串
+                     {user_id}
+                     </foreach>
+                 -->
             </if>
         </if>
     </sql>
